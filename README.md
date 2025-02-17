@@ -17,8 +17,8 @@ Methodology:
 
 Issues:
 -
-- Initially tried using K-Means clustering to separate the cones into left and right groups, but it sometimes failed when cones were unevenly distributed. Attempted polynomial fitting, but it resulted in unstable curves when dealing with outliers.
-- Attempted to also use curves originally instead of straight lines to connect the cones together for boundary detection but failed when left side curved out of boundary and stopped connecting after three cones from the left (K-means was used for this as well).
+- Initially tried using K-Means clustering to separate the cones into left and right groups, but it sometimes failed when cones were unevenly distributed (as percieved by the algorithm). Attempted polynomial fitting, but it resulted in unstable curves when dealing with outliers (with other shades of color).
+- Attempted to also use curves originally instead of straight lines to connect the cones together for boundary detection but failed when left side curved out of boundary and stopped connecting after three cones from the left (K-Means was used for this as well).
 - Switching to DBSCAN helped improve clustering by handling noise points, and RANSAC regression provided a more robust curve-fitting method.
 - Some issues remained, including false positives in cone detection and missing cones in cases of varying lighting such as the bright colors in the original picture that can cause confusion in boundary detection.
 
