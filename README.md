@@ -8,6 +8,7 @@ answer.png:
 
 Methodology:
 -
+- Attempted to replicate sample answer.png image given originally.
 - Researched different algorithms to determine which would be best suited for cone/color detection and learned how to use the relevant libraries used in code.
 - First preprocessed the input image by converting it to the HSV color space and applying Gaussian blur to reduce noise when first coding.
 - Applied color thresholding to isolate orange cones and used morphological transformations to refine the detected regions.
